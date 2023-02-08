@@ -1,1 +1,63 @@
+* {
+    box-sizing: border-box;
+}
 
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+h1 {
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container input {
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: lightgray;
+    max-width: 100%;
+}
+
+.create--btn {
+    padding: 10px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 3px;
+}
+
+.list--items {
+    color: #fff;   
+    font-size: 1.3rem;
+}
+
+.tasks--container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete--btn {
+    padding: 5px;
+    background-color: brown;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+}

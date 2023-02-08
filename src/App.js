@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
+import './App.css'
 
 // Unique id for every task
 let globalID = 0;
@@ -27,7 +28,7 @@ function App() {
     }
 
     return (
-        <div>
+        <div className='container'>
             <h1>Track Your Daily Tasks</h1>
 
             <form onSubmit={createTodo}>
@@ -40,14 +41,14 @@ function App() {
                     }}
                 />
 
-                <button type='submit'>Create Task</button>
+                <button className='create--btn' type='submit'>Create Task</button>
             </form>
 
-            <ul>
+            <ul className='list--items'>
                 {todos.map((item) => {
-                    return <div key={item.id}>
+                    return <div className='tasks--container' key={item.id}>
                         <li>{item.todo}</li>
-                        <button onClick={() => deleteTaskItem(item.id)}>Delete</button>
+                        <button className='delete--btn' onClick={() => deleteTaskItem(item.id)}>Delete</button>
                     </div>
                 })}
             </ul>
