@@ -1,4 +1,4 @@
-import { About, Hero, Navbar, Technologies } from "./components";
+import { About, Experience, Hero, Navbar, Technologies } from "./components";
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
       <Hero />
       <About />
       <Technologies />
+      <Experience />
     </div>
     </div>
   )
