@@ -4,6 +4,8 @@ import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { motion } from "framer-motion";
+
 
 const Technologies = () => {
   return (
